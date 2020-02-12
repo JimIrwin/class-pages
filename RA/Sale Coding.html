@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+	<meta http-equiv="CONTENT-TYPE" content="text/html; charset=windows-1252">
+	
+	<title>Deed Coding</title><meta name="GENERATOR" content="OpenOffice.org 3.3  (Win32)">
+	<meta name="CREATED" content="0;0">
+	<meta name="CHANGEDBY" content="love truth">
+	<meta name="CHANGED" content="20110902;11184307">
+	<meta name="CHANGEDBY" content="love truth"></head>
+<body dir="ltr" lang="en-US">
+<p><font size="4"><b>Coding Deeds</b></font><br></p>When in doubt, add
+a ? to the coding and use the comment section to ask for Dr Irwin's
+attention to the coding. &nbsp;Use NA&nbsp;when&nbsp;information is
+expected but not available (different from blank).&nbsp;<br><br> Refer to a&nbsp;coding spreadsheet with completed examples in order to make sense of the detailed discussion here.<br><br><span style="font-weight: bold;">Variables</span>:
+&nbsp; coder&nbsp;
+DBn &nbsp;page
+date&nbsp;value&nbsp; cu
+FPtype FPnames FPresid&nbsp; illit &nbsp;deed SPtype &nbsp;fem
+&nbsp;SPnames SPresid &nbsp;relate&nbsp;&nbsp;type loc&nbsp; acres bldg
+&nbsp;SqFeet Frontage &nbsp;road&nbsp; &nbsp;
+geog&nbsp;&nbsp; &nbsp; prior_sale &nbsp; comments<br><br><span style="background-color: rgb(51, 255, 51);">coder</span>
+(initials of person coding) &nbsp; &nbsp;&nbsp; &nbsp; Court (Hco,&nbsp;Hust,&nbsp;NYAlb, Essex, Brun,
+Bed, etc)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DBn: deed book number &nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+<span style="background-color: rgb(51, 255, 51);">Pg</span>:&nbsp;page of item (start) &nbsp; <br><br><span style="background-color: rgb(51, 255, 51);">date </span>&nbsp;yearmonthday
+18380724 (coding for&nbsp;July 24, 1838) &nbsp; &nbsp;<br><br><span style="background-color: rgb(51, 255, 51);">deed</span>
+(what sort deed?) &nbsp; sale sale.auct sale.enf sale.g &nbsp;sale.gw&nbsp; <span style="background-color: rgb(255, 102, 102);">QC</span>
+&nbsp;other &nbsp;(optionally, instead of "other" when appropriate you
+could choose one of :&nbsp;&nbsp; &nbsp; &nbsp;release &nbsp;&nbsp;
+&nbsp;secure &nbsp; &nbsp; nominal &nbsp;). &nbsp;<br>Code &nbsp;<span style="background-color: rgb(255, 102, 102);">QC</span> if the language of the transfer includes the words "quit claim" -- these are not regular sales. <br>If
+more specific information is&nbsp;noticed, use a period to code it:
+&nbsp;sale.auct (sold at auction)&nbsp; &nbsp;&nbsp; sale.<span style="background-color: rgb(255, 153, 0);">enf</span>
+[the word "enfeoff" is in the sale language; but sale.auct for auction
+sale with enfeoff&nbsp;in the deed ] &nbsp; Note, for&nbsp;a regular
+sale, various&nbsp;combinations of
+verbs may be used,&nbsp;e.g. in Albany:&nbsp; "grant bargain and
+sell"&nbsp; &nbsp;or &nbsp;"sell convey
+release and confirm" etc. &nbsp; &nbsp;]&nbsp;<br><br>sale.grant : for
+Henrico in the 1850s, many deeds simply use the word "grant" without
+the usual other words (bargain, sell,&nbsp;convey, etc.). &nbsp;<br>sale.gw
+-- when the deed says "grant ... &nbsp;with general warranty" (and
+other words like "bargain&nbsp;and sell" are not used. &nbsp;Many deeds
+that "grant" land are deeds to "secure" some debt, but some are simply
+sales --
+read through the deed to identify it for coding of the deed variable as
+"sale.grant" versus "secure" &nbsp;. &nbsp;<br><br><br><span style="font-weight: bold;"><span style="background-color: rgb(51, 255, 51);">FPtype</span>
+(First part type)</span> &nbsp; <br>typical values: &nbsp;HW&nbsp; m &nbsp; f&nbsp; &nbsp; &nbsp;<br>other
+common values to code:&nbsp; D &nbsp;R &nbsp; H &nbsp;W &nbsp;HW2
+&nbsp;HW3 &nbsp;m2 &nbsp;f2 &nbsp;mf &nbsp; fm &nbsp; Ex
+&nbsp;Exs&nbsp; Ex.f &nbsp; Ex.m.f &nbsp; Ex.f.f &nbsp; Adm Adms
+(administrator(s))&nbsp; &nbsp; Ct (court) &nbsp; Comp (company)
+&nbsp;Church &nbsp;Org (organization) &nbsp; Off (official) &nbsp;Cmmr
+Cmmrs &nbsp;(commissioner(s)) <br><br>HW
+husband &amp; wife &nbsp; &nbsp; &nbsp;HW2 &nbsp;two married couples &nbsp; HW3 three married couples <br>&nbsp;m male &nbsp; &nbsp; &nbsp;H husband &nbsp; R widower &nbsp; Tr &nbsp;trustee &nbsp;Att<br>&nbsp;f &nbsp;female &nbsp; &nbsp;W&nbsp;wife &nbsp;&nbsp; &nbsp;D widow&nbsp; &nbsp;<br>use 2 or 3 for pairs or trios of &nbsp;HW &nbsp;m &nbsp; f &nbsp; <br>m2f means 2 men, 1 woman &nbsp; &nbsp; m2f2 means 2 men and 2 women (not spouses of each other)<br><br>For other multi-person first parts, you may simply code FPtype as GROUP and leave it for Dr Irwin to fine-tune. <br><br>Ex&nbsp;executor
+&nbsp;the default value for Ex is a male executor for a male decedent; otherwise, code as follows<br>Ex.f&nbsp; female executor for a male decedent<br>Ex.m.f&nbsp; male executor for female decedent &nbsp;&nbsp;<br>Ex.f.f
+&nbsp;female executor for female deceased<br><br>Exs executors -- if one or more is female code FEM=1&nbsp; &nbsp; <br>Ex? &nbsp;executor, but coding to be determined by Dr Irwin &nbsp;&nbsp; &nbsp;<br>Adm &nbsp;Adms &nbsp; &nbsp;administrator(s) &nbsp; &nbsp;See Executors (same approach)<br><span style="font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;"></span>Tr trustee Trs trustees &nbsp; &nbsp; &nbsp;add .f &nbsp;or .W if you notic Tr(s)&nbsp;is for a woman or a wife<br>Att
+attorney -- when an attorney signs for the party(s) of the first part.
+E.g.&nbsp; Att.HW &nbsp; HW acting by their attorney; &nbsp;Att.m
+&nbsp;m acting
+by his attorney; &nbsp; Att.f &nbsp;f acting by her attorney. &nbsp; <br>Ci.Alb Ci.Rich &nbsp; -- The City&nbsp;is the seller (often, the&nbsp;Mayor and others)<br style="background-color: rgb(51, 255, 51);"><br><br style="background-color: rgb(51, 255, 51);"><span style="font-weight: bold;"><span style="background-color: rgb(51, 255, 51);">FPnames</span>:</span>&nbsp; name(s) &amp; occupation(s) of the party(s) of the First Part. &nbsp;With
+many persons, record surnames only. &nbsp;If more than five surnames,
+simply record three surnames and add&nbsp; ETC.<br><br>The coding format for names is very important -- pay close attention to the conventions we use.<br>Format names as&nbsp;<span style="background-color: rgb(255, 204, 204);">Surname firstname middlename</span>
+(or initial)
+&nbsp;e.g. &nbsp;Anthony susan b &nbsp; &nbsp; King martin luther Jr
+&nbsp; <br>Surnames start with a capital letter (upper case).&nbsp;<br><br>Periods are not used when coding names. A comma separates people. &nbsp;&amp; joins spouses (use&nbsp;<span style="background-color: rgb(255, 204, 204);"></span>&amp; for spouses, and only for spouses).<br><br>&nbsp;Surnames
+start with a capital letter, and surnames are not repeated (instead use
+a comma, where a lower case letter following a comma indicates the same
+surname as the prior person).<br>Thus:&nbsp; "Taylor willam
+(farmer) &amp; ann" &nbsp;&nbsp; &nbsp; "Obama barack &amp; michelle,
+malia, sasha" &nbsp; &nbsp; &nbsp; &nbsp; "James jesse, frank,
+Washington martha" &nbsp; &nbsp; "Smith, Jones, Brant, VanEyck" &nbsp;
+"GROUP of 12" &nbsp; &nbsp;<br><br><br><span style="font-weight: bold;"><span style="background-color: rgb(51, 255, 51);">FPresid</span>:</span> &nbsp;residence of parties of the first part. The most important point here is urban (Ci.) or not.&nbsp;Examples follow:<br>[Albany
+deeds] &nbsp;Ci.AlbW1&nbsp;Ci.AlbW9 &nbsp;Ci.AlbW12 &nbsp; Ci.Alb (ward
+not given) &nbsp; Co.Alb (more specific location not given)<br>&nbsp;&nbsp;T.Waterv
+&nbsp;Waterv &nbsp; T.Guild &nbsp;Guild &nbsp; T.Westerl &nbsp;&nbsp;
+T.WTroy &nbsp; T.Schen &nbsp;&nbsp;Renss V.Renss &nbsp;T.Renss &nbsp;
+WTroy&nbsp;V.WTroy&nbsp;&nbsp;&nbsp;<br>Locations outside of Albany County, &nbsp; &nbsp;<br>if a city, code&nbsp; Ci.xxxx &nbsp; e.g.&nbsp; Ci.NYC &nbsp;Ci.Troy &nbsp; Ci.Phila&nbsp; Ci.Boston &nbsp;; <br>else
+code other counties as Co.xxxxx e.g.&nbsp; Co.Renss &nbsp;Co.Cayug
+&nbsp;Co.Dutchess ; other states as S.xx &nbsp;e.g. &nbsp;S.MA
+&nbsp;S.PA S.OH ; other nations as N.xxxxxx &nbsp; e.g. &nbsp;N.Canada
+&nbsp; N.England &nbsp;N.Mexico<br>[Hco and Hust deeds] &nbsp; Co.Hco Pa.Hco &nbsp;Ci.Rich &nbsp;<br><br>*
+use a prefix only as the prefix is used in the deed (V.WTroy for
+"Village of West Troy" &nbsp; &nbsp;WTroy for &nbsp;"West Troy" &nbsp;
+&nbsp; Hco for "Henrico" &nbsp;Pa.Hco for "Parish of Henrico" &nbsp;
+Co.Hco for "County of Henrico").<br><br>SP parties of the second part <span style="font-weight: bold; background-color: rgb(51, 255, 51);">SPtype&nbsp;SPnames SPresid</span> &nbsp; &nbsp;SPtype --&nbsp; see FP
+type;&nbsp;&nbsp; &nbsp;SPnames -- FPnames &nbsp;SPreside -- see FPresid <br><br><span style="background-color: rgb(51, 255, 51);">&nbsp;rel </span>&nbsp;-- &nbsp;are FP and SP related?
+&nbsp; 0 &nbsp;no relation seen; &nbsp;1 &nbsp;relation stated (e.g. parent
+and child, brothers, etc); &nbsp; 2 &nbsp;same surname, but relationship
+not stated &nbsp; <br><br>&nbsp;<span style="background-color: rgb(51, 255, 51);">fem</span> &nbsp;(1 if a female is a party to the deed, and
+not as a W; 0 otherwise &nbsp; &nbsp;? for unsure) <br><br><span style="background-color: rgb(51, 255, 51);">&nbsp;illit</span>
+(illiteracy?). &nbsp;Code of 0&nbsp;denotes signatures and not marks by
+all the
+parties of the first part. If&nbsp; 1P person(s)&nbsp;marked, then code
+the "type" of
+1P person who used a "mark" (instead of signing the deed): W for a
+wife marked, H for a husband,&nbsp; m for&nbsp;a male marked, etc.
+&nbsp;-9 neither mark nor signature for one of more of the&nbsp;parties
+of the first part.<br><br><span style="font-weight: bold; background-color: rgb(51, 255, 51);">value</span> (sale
+price, the "consideration") &nbsp; &nbsp;&nbsp;&nbsp;<span style="background-color: rgb(51, 255, 51);">cu</span> &nbsp;(currency)&nbsp;
+&nbsp;0 $ &nbsp; &nbsp; 2 pounds &nbsp; &nbsp;6 lbs tobacco &nbsp; &nbsp;? for unsure<br><br><span style="background-color: rgb(51, 255, 51);">Type</span>
+(of
+property) -- be aggressive with abbreviations, to signal&nbsp;what is
+written : &nbsp;"p&nbsp;p&nbsp;land" &nbsp;for piece or parcel of land
+&nbsp; "l&nbsp;tr&nbsp;land" &nbsp; for lot or tract of land &nbsp;
+&nbsp;"l p ground"&nbsp; for
+lot or parcel of ground. Etc.&nbsp; When multi pieces are involved,
+start
+with a number ("2 l&nbsp;p" &nbsp; for two lots or pieces).&nbsp;
+Precision is
+not important for this variable, so do not spend time fussing with it.<br><br><span style="background-color: rgb(51, 255, 51);">acres</span> (for
+land when size is given in acres) &nbsp; &nbsp; &nbsp; <br><br><span style="background-color: rgb(51, 255, 51);">sq
+feet</span> (for urban land, calculated from dimensions given in the
+deed) Enter the dimensions as a calculation in the
+spreadsheet cell. &nbsp;If a lot is 100' x 30' enter =100*30 and do not
+enter 3000 (but 3000 will be displayed).<br><br><span style="background-color: rgb(51, 255, 51);">bldg</span> &nbsp;[0 1] &nbsp;&nbsp; &nbsp; <br><br><span style="background-color: rgb(51, 255, 51);">loc</span>ation
+(usually the county or city in question) : &nbsp;for Albany City,
+include Ward Number if available &nbsp;-- so Ci.AlbW3 is 3rd Ward and
+Ci.AlbW11 is 11th Ward &nbsp; &nbsp;etc.&nbsp; &nbsp; See FPresid
+(above) for more specifics on coding the geographic information.<br><br><span style="background-color: rgb(51, 255, 51);">roads</span> or river on which the property lies (not for roads that are simply nearby); also code major rivers here.&nbsp; &nbsp; &nbsp;<br><br>&nbsp;<span style="background-color: rgb(51, 255, 51);">geo</span> (geographic details)
+&nbsp;assorted locational details, only occassionally relevant.<br><br><span style="background-color: rgb(51, 255, 51);">priorSale</span>
+-- date of prior sale, if mentioned &amp; noticed. If more than one
+prior sale, record the latest and add "&amp; more" &nbsp; [e.g. &nbsp;
+18051123 &amp; 2 more ]<br><br><span style="background-color: rgb(51, 255, 51);">comments</span> (if any, usually blank). &nbsp; Use&nbsp;if you happen to notice information of interest, and for&nbsp;questions or comments.<br><br><span style="font-weight: bold;"><br>some more discussion</span><br><br>Deed
+-- key issue is sale or other (other deeds include: QC quit claim,
+mortgage, release, secure, bond, &nbsp;). &nbsp; When unsure it is best
+to code the deed as a possible sale -- code deed as sale? &nbsp;and
+highlight it for Jim's attention. &nbsp;<p>sale.enf &nbsp;: &nbsp;"enfeoff" &nbsp; The "deed"
+variable is coded sale.enf&nbsp; if&nbsp;the word "enfeoff"
+is used in the language that describes the transfer of the land (for
+example, in Albany deeds "by these presents doth grant, bargain,
+sell, alien, remise, release convey, assure <font color="#000000"><span style="background: rgb(255, 102, 102) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">enfeoff</span></font>
+and confirm." &nbsp; Code simply as "sale" when
+enfeoff is not there (such as "grant bargain sell alien convey
+and confirm" ). &nbsp;Be alert for the word "quit claim"
+&nbsp;-- code that as QC and leave it for Jim to determine whether it
+is a sale or not.</p><p></p>Type
+: type of land as stated in source, for example "lot, piece, or parcel" (l p or p)
+or&nbsp; "tract of land" (tract). &nbsp;Use abbreviations ("l p or p" for
+"lot, piece, or parcel" &nbsp; &nbsp;"tract" for "tract of land").<br>If coding a non-sale this variable (Type) is optional, &nbsp;to code if noticed ...&nbsp; RE (other real estate)&nbsp;&nbsp;
+/&nbsp;&nbsp;&nbsp;
+slave(s) / PE (other personal estate) / other. <br><br>bldg
+: &nbsp;0 no mention of buildings; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;1 buildings mentioned (e.g. &nbsp;house,
+barn, tenement, buildings).<br><br>geog: geographic details,&nbsp;usually blank, but if you notice other info, enter it here (detailed location, lot
+number, rivers nearby -- similar to a comment, but this is info about
+the land)<br><br><br><span style="font-weight: bold;">more details, if needed</span><br style="font-weight: bold;"><p style="margin-bottom: 0in;">Court: Hco or Hust or NYAlb or Essex&nbsp;
+(identifies the court from which deed is taken)&nbsp; &nbsp;&nbsp; &nbsp;
+&nbsp; DB: deed book number &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+Page: the page on which the item starts 
+</p><br>xtra: 0 if deed is in the random sample; 1 if it is an
+extra deed (not in the random sample). &nbsp;Coded by Dr Irwin only.
+
+<p style="margin-bottom: 0in;">Deed:&nbsp; sale / secure / release / other.<br>sale ...&nbsp; of land or lot or other real estate<br>secure ...&nbsp; deed that uses property to secure a debt (providing collateral or security for a debt).<br>release ...&nbsp; deed that releases property that was used as security.<br>oth
+...&nbsp;&nbsp; (not one of the above); use a period to append more
+info -- oth.QC for&nbsp;quit claim, oth.lease for a lease<br></p><br><p style="margin-bottom: 0in;">SPtype :&nbsp; parties of the second
+part (and third part, if appropriate). Same coding as FPtype, but use
+a comma to separate 3P from 2P;   &nbsp;mm,m&nbsp; indicates two men
+are the parties of the second part and one man is the party of the
+third part. HW,m would indicate husband and wife as parties of the
+2nd part and one man as party of the third part.</p><span style="font-weight: bold;"><br></span><p style="margin-bottom: 0in;">value :&nbsp; required entry for land
+sales, where “value” is the price; optional entry for
+other deeds (worth spending 10 seconds looking).&nbsp; For deeds that "secure" or "release"
+property for debts, if you notice the money value involved then
+record it, but do not take time searching for that money value.&nbsp;
+For land sales, record the price paid (usually indicated by "in
+consideration of&nbsp; the payment of ... ") or record "not
+found."</p><br><p style="margin-bottom: 0in;">bldg:&nbsp; 0 or 1&nbsp; ; 1 if
+buildings are mentioned (e.g. house, tenement, barn, structures), 0
+otherwise&nbsp;</p><br><br><br></body></html>
